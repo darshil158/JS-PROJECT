@@ -9,7 +9,7 @@ let questions = [
         ], 
         correct : "Hyper Text Markup Language"
     },
-    {
+    { 
         question: "Which language is used for styling web pages?",
         options: [
             "HTML",
@@ -111,27 +111,59 @@ let ans = false;
 
 let timer;
 
-let question = document.getElementById("que");
-
-let options = document.getElementById("opt");
-
-let nextBtn = document.getElementById("nextBtn");
-
-let timerNum = document.getElementById("timeNum");
-
 let result = document.getElementById("result");
 
 let queNum = document.getElementById("queNum");
 
 let progressBar = document.getElementById("progressBar");
 
+let question = document.getElementById("que");
+
+let options = document.getElementById("opt");
+
+let nextBtn = document.getElementById("nextBtn");
+
+let timerNum = document.getElementById("timeN");
+
+
+function checkAnswers(selected, clickedBtn) {
+
+  let correctAnswer = questions[currentQ].correct;
+  
+  if (selected === correctAnswer) {
+    score++;
+  } 
+  
+}
+
+function startTimer() {
+  timer = setInterval( () => {
+    
+    time--;
+    timerNum.innerHTML = time;
+    
+    if (time === 0) {
+
+      clearInterval(timer);
+      currentQ++;
+
+      if (currentQ < questions.length) {
+        loadQuestions();
+      } 
+      else {
+        showResult();
+      }
+    }
+  }, 1000);
+}
+
 function loadQuestions() {
 
   options.innerHTML = "";
 
-  time = 10;
-
   ans = false;
+
+  time = 10;
 
   timerNum.innerHTML = time;
 
@@ -173,65 +205,12 @@ function loadQuestions() {
           showResult();
         }
 
-      }, 900);
+      }, 100);
 
     });
 
     options.appendChild(button);
   });
-}
-
-function checkAnswers(selected, clickedBtn) {
-
-  let correctAns = questions[currentQ].correct;
-
-  let allBtns = options.querySelectorAll(".option");
-
-  allBtns.forEach((btn) => {
-
-    btn.disabled = true;
-
-    if (btn.innerHTML === correctAns) btn.classList.add("correct");
-
-  });
-
-  if (selected === correctAns) {
-    score++;
-  } 
-  else {
-    clickedBtn.classList.add("wrong");
-  }
-}
-
-nextBtn.addEventListener("click", function () {
-  currentQ++;
-  if (currentQ < questions.length) {
-    loadQuestions();
-  } 
-  else {
-    showResult();
-  }
-});
-
-function startTimer() {
-  timer = setInterval( () => {
-    
-    time--;
-    timerNum.innerHTML = time;
-    
-    if (time === 0) {
-
-      clearInterval(timer);
-      currentQ++;
-
-      if (currentQ < questions.length) {
-        loadQuestions();
-      } 
-      else {
-        showResult();
-      }
-    }
-  }, 1000);
 }
 
 function showResult() {
@@ -252,5 +231,15 @@ function showResult() {
 
   result.innerHTML = "Quiz Completed <br> 🌟 Your SCORE : " + score + " / " + questions.length;
 }
+
+nextBtn.addEventListener("click", function () {
+  currentQ++;
+  if (currentQ < questions.length) {
+    loadQuestions();
+  } 
+  else {
+    showResult();
+  }
+});
 
 loadQuestions();
