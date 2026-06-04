@@ -1,4 +1,4 @@
-let targetDate = new Date(2027, 1, 1, 0, 0, 0);
+let targetDate = new Date(2027, 1, 1);
 
 let interval = setInterval(() => {
 
