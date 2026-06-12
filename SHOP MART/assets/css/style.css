@@ -329,6 +329,9 @@ footer a:hover {
     border-radius: 50%;
     font-weight: 600;
 }
+.qty-control{
+    width: 120px;
+}
 
 .total-price {
     color: var(--primary);
