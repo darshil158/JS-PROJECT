@@ -25,7 +25,8 @@
 
 5) Cart
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/22480a31-4a5b-4aa0-bd9a-990657629dcc" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/1735b407-727d-4b92-b691-2aaf9c8aec0a" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/67a3317f-5da0-43e0-8f68-ae3c15af11f9" />
+
 
 
 6) Single Product
