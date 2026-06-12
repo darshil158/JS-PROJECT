@@ -2,7 +2,7 @@
 
 # Shop Mart Project :- 
 
-// 1) Index Page(Home Page)
+1) Index Page(Home Page)
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/24d5c92b-d47e-4ae4-92b6-926936ee2116" />
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ac1e997f-ff69-4b57-9dd5-94def6cb7ecc" />
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/8ed1c82f-d501-4831-bfea-2e52e3f88f56" />
