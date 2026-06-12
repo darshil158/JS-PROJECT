@@ -198,7 +198,7 @@
                                     </a>
                                 </div>
                             </td>
-                            <td>$${product.price}</td>
+                            <td>₹${product.price}</td>
                             <td class="qty-control">
                                 <button class="btn btn-sm btn-dark btn-outline-white decrease-qty" data-id="${item.id}" onclick="decreaseQuantity(${item.id})">
                                     <i class="bi bi-dash"></i>
@@ -253,7 +253,7 @@
                     total += product.price * item.quantity;
                 }
             });
-            document.getElementById("total-price").innerText = `$${total}`;
+            document.getElementById("total-price").innerText = `₹${total}`;
         }
 
         calculateTotal();
