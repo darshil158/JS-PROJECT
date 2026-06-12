@@ -12,7 +12,8 @@
 
 2) View All Products
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/a8221eca-06f4-4ba3-ad27-4deda6d0de3b" />
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/9ffc114f-c1c8-4206-91aa-137b70ffa947" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/375c3102-fe22-46c7-83ab-d5b5fd74f84b" />
+
 
 3) Add Products
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/b3b51d4f-9bb2-44da-a4f5-ed8a9db3bd71" />
